@@ -12,15 +12,13 @@ process page 는 나중에 서블렛 자바 클래스 부분
  --%>
  
  <%
- 	
  	String input_id = request.getParameter("id");
 	String input_pw = request.getParameter("pw");
 	String input_name = request.getParameter("name");
-	boolean input_sex = request.getParameter("name").equals("true")?true:false;
+	boolean input_sex = request.getParameter("sex").equals("true")?true:false;
 	System.out.println(input_sex);
 	boolean isJoin = dao.isJoin(input_id,input_pw,input_name,input_sex);
  	
-	
  %>
  
  <%if(isJoin){%>

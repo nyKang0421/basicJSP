@@ -91,5 +91,27 @@ public class MemberDAO {
 	private void insertMember(String id, String pw, String name, boolean sex) {
 		list.add(new Member(id, pw, name, sex));
 	}
-
+	
+	public boolean removeAMember(int idx) {
+		if(idx < list.size()) {
+			list.remove(idx);
+			return true;
+		}
+		
+		return false;
+	}
+	
+	public boolean isCheckPw(String pw) {
+		if(pw.equals(list.get(log).getPw())) {
+			return true;
+		}
+		
+		return false;
+	}
+	
+	public void updateAMember(String name, String gender) {
+		boolean gen = gender.equals("true")? true:false;
+		list.get(log).setName(name);
+		list.get(log).setGender(gen);
+	}
 }

@@ -20,8 +20,8 @@
 		</tr>
 		<tr>
 			<td>성별</td>
-			<td><input type="radio" name="sex" value=true checked> 남성</input>
-			<input type="radio" name="sex" value=false> 여성</input></td>
+			<td><input type="radio" name="sex" value="true" checked> 남성</input>
+			<input type="radio" name="sex" value="false"> 여성</input></td>
 		</tr>
 		<tr align = "center">
 			<td colspan="2"><input type="submit" value="회원가입" ></td>

@@ -4,7 +4,7 @@
 <%@ include file="./header.jsp" %>  
 <h3> 회원 목록 </h3>
 
-<table>
+<table border="1">
 
 <tr>
 	<th>아이디</th>
